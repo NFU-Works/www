@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KORA RORA</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="/gadza1/valera.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>gadza</span>
+    </div>
+    <div id="about">
+      <a href="/" title="Main page" onclick="slowScroll('#main')">Home</a>
+      <a href="/gadzainfo" title="Info" onclick="slowScroll('#gadzaThreeDd')">Gadza Info</a>
+      <a href="/leaders" title="Lead" onclick="slowScroll('#Leader')">Leaders</a>
+      <a href="/about" title="Lead" onclick="slowScroll('#Leader')">About Us</a>
+      <a href="/signin" title="Lead" onclick="slowScroll('#Leader')">Sign in</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Online ordering Gadza</h1>
+    <h3>For birthday parties</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>U can choose any gadza u want!</h2>
+    </div>
+    <div class="text">
+      <span>We`ll make u a gift if that's ur 54-th birthday!</span><br>
+      <span>Omega-lul or Aboba are nice to perform on ur party!</span><br>
+      <span> RoflCAll - 150 rub</span>
+    </div>
+  </div>
+
+  <div id="overiew">
+    <h2><a href="/gadzainfo">Types</a></h2>
+    <h4>Choose one u wanna oder</h4>
+    <div class="img">
+      <img src="./gadza1/4.0.jpg" alt="">
+      <span>Gadza Type: 3D</span>
+      <img src="./gadza1/1.0.jpg" alt="">
+      <span>Gadza Type: 4D</span>
+      <img src="./gadza1/2.0.jpg" alt="">
+      <span>Gadza Type: 8D</span>
+      <img src="./gadza1/3.0.jpg" alt="">
+      <span>Gadza Type: Ultra</span>
+    </div>
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How u can make a transaction?</span>
+      <p>Please, donate some gryvnas to dedushka
+         to buy chekushku. Dedushka hasn't any money
+         to gas up the dedushka's motoblock.</p>
+    </div>
+    <div>
+      <span class="title">Contacts</span><br>
+      <span class="heading">How u can сontact us?</span>
+      <p>Write down, +7 1488 228 1337.
+      What? a lot numbers?</p>
+    </div>
+    <div>
+      <span class="title">Info</span><br>
+      <span class="heading">Some info about us</span>
+      <p>I'm Valeriy Zhmyshenko i'm bivis i'm dodik
+         i'm dcp i'm patau i'm 15 y.0 zdravstvuite</p>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  function slowScroll(id) {
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>

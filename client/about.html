@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KORA RORA</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="shortcut icon" href="/gadza1/valera.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>gadza</span>
+    </div>
+    <div id="about">
+      <a href="/" title="Main page" onclick="slowScroll('#main')">Home</a>
+      <a href="/gadzainfo" title="Info" onclick="slowScroll('#gadzaThreeDd')">Gadza Info</a>
+      <a href="/leaders" title="Lead" onclick="slowScroll('#Leader')">Leaders</a>
+      <a href="/about" title="Lead" onclick="slowScroll('#Leader')">About Us</a>
+      <a href="/signin" title="Lead" onclick="slowScroll('#Leader')">Sign in</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h2>About us</h2>
+    <h5>Glad & CO<br>Pena & Detrov</h5>
+    <h3>Who we are</h3>
+    <p>Glad Valakas is known not only for his image,
+        but also for the many branded phrases and words that were taken apart into quotes:
+        Chi, sho, kavo, la, tupa atdihaem, tupa pazheloi borrov (or krol),
+        agricultural (sanya khuy sasi) etc. In addition, many memes are dedicated to the work of Valakas.
+        In "VKontakte" there are several publics collecting such jokes.</p>
+    <p>Valakas' wife also streams. Her name is Alina, nickname on twitch a1most_over.
+       Users found a connection between the characters - Denis appeared on one of the girl's streams.
+       In addition, there are many joint photos on the network, including weddings. On Valakas' streams,
+       Alina plays the role of granddaughter of her grandfather and constantly swears with him.</p>
+    <p>Valakas has his own army of fans who love the crazy look. On his latest streams,
+       he not only comments on games, but also has fun in every possible way, collecting donations.
+       For example, he communicates on Skype with random people or records a conversation with prostitutes.</p>
+    <p>Sukhachev is known under several characters: Glad Valakas, Valery Zhmyshenko,
+       Denis Petrov and Penis Detrov.It is believed that Denis himself distorts his voice
+       without resorting to special programs, however, the Internet is full of “revelations”,
+       in which interference is heard when using the so-called. masks. Denis is also a musician.
+       The Genius website has information about his studio GVS, and on the Internet you can find clip
+       s and joint tracks with rappers (mostly comic).</p>
+    <p>Valakas' real name is Denis Sukhachev. According to the user The Question, earlier Denis had a real page on VKontakte,
+       where he could find out his biography (now the account has been deleted).
+       According to these data, Sukhachev was born on September 13, 1989 in the city of Rovenki,
+       Luhansk region of Ukraine. Now he lives in Samara. There is a wife,
+       Alina, who plays the role of the granddaughter of Valery Albertovich.
+       Valakas started streaming in 2009. On the first streams, he playedLineage II and commented
+       in the voice of an elderly man with a Ukrainian accent. Nick on twitch - GLADIATORPWNZ.
+       It is watched by 150 thousand people on the YouTube channel.
+</p>
+  </div>
+
+  <div id="contacts">
+    <center><h5>Need Help? Please fill out form below:</h5></center>
+    <form id="form_input">
+      <label for="name">Name <span>*</span></label><br>
+      <input type="text" placeholder="Enter ur PoZhiLoe name" name="name" id="name"><br>
+      <label for="last">Last name <span>*</span></label><br>
+      <input type="text" placeholder="Enter ur last name" name="last" id="last"><br>
+      <label for="email">Email <span>*</span></label><br>
+      <input type="email" placeholder="Enter ur email" name="email" id="email"><br>
+      <label for="message">Message <span>*</span></label><br>
+      <textarea placeholder="Enter ur message" name="message" id="message"></textarea><br>
+      <div id="mess_send" class="btn">Send</div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How u can make a transaction?</span>
+      <p>Please, donate some gryvnas to dedushka
+         to buy chekushku. Dedushka hasn't any money
+         to gas up the dedushka's motoblock.</p>
+    </div>
+    <div>
+      <span class="title">Contacts</span><br>
+      <span class="heading">How u can сontact us?</span>
+      <p>Write down, +7 1488 228 1337.
+      What? a lot numbers?</p>
+    </div>
+    <div>
+      <span class="title">Info</span><br>
+      <span class="heading">Some info about us</span>
+      <p>I'm Valeriy Zhmyshenko i'm bivis i'm dodik
+         i'm dcp i'm patau i'm 15 y.0 zdravstvuite</p>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  function slowScroll(id) {
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+  </body>
+  </html>

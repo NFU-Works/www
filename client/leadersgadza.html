@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KORA RORA</title>
+  <link rel="stylesheet" href="css/leaders.css">
+  <link rel="shortcut icon" href="/gadza1/valera.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>gadza</span>
+    </div>
+    <div id="about">
+      <a href="/" title="Main page" onclick="slowScroll('#main')">Home</a>
+      <a href="/gadzainfo" title="Info" onclick="slowScroll('#gadzaThreeDd')">Gadza Info</a>
+      <a href="/leaders" title="Lead" onclick="slowScroll('#Leader')">Leaders</a>
+      <a href="/about" title="Lead" onclick="slowScroll('#Leader')">About Us</a>
+      <a href="/signin" title="Lead" onclick="slowScroll('#Leader')">Sign in</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Borow Borow Borow</h1>
+    <h3>Great men're reaching great goals</h3>
+  </div>
+
+  <div id="glad">
+    <div class="intro">
+      <h2>Valeriy Albertovich</h2>
+      <span>The head and the face of LLC "Omega-lul". U may know him as "Pozhiloe Telo".
+            He've fought 2 wars. Nowadays, he's active, inactive Air Force soldier "VDV".
+            Valera has got a lot awards for skaking on Maydan. He lost his leg on Donbasss.
+            I'm Anton Palych, I'm bivis, I'm dcp, I'm dodik, I'm patau, I'm 15 y.o., Zdravstvuite!</span>
+    </div>
+    <div class="img">
+      <img src="/gadza1/borow.jpg" alt="" width="500.4" height="333.6">
+    </div>
+  </div>
+
+  <div id="pena">
+    <div class="intro">
+      <h2>Denis Petrov</h2>
+      <span>The head and the face of LLC "Omega-lul". U may know him as "Pozhiloe Telo".
+            He've fought 2 wars. Nowadays, he's active, inactive Air Force soldier "VDV".
+            Valera has got a lot awards for skaking on Maydan. He lost his leg on Donbasss.
+            I'm Anton Palych, I'm bivis, I'm dcp, I'm dodik, I'm patau, I'm 15 y.o., Zdravstvuite!</span>
+    </div>
+    <div class="img">
+      <img src="/gadza1/pena.jpg" alt="" width="500.4" height="333.6">
+    </div>
+  </div>
+
+
+  <div id="vdv">
+    <div class="intro">
+      <h2>Anton Palych</h2>
+      <span>The head and the face of LLC "Omega-lul". U may know him as "Pozhiloe Telo".
+            He've fought 2 wars. Nowadays, he's active, inactive Air Force soldier "VDV".
+            Valera has got a lot awards for skaking on Maydan. He lost his leg on Donbasss.
+            I'm Anton Palych, I'm bivis, I'm dcp, I'm dodik, I'm patau, I'm 15 y.o., Zdravstvuite!</span>
+    </div>
+    <div class="img">
+      <img src="/gadza1/hero.jpg" alt="" width="500.4" height="333.6">
+    </div>
+  </div>
+
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How u can make a transaction?</span>
+      <p>Please, donate some gryvnas to dedushka
+         to buy chekushku. Dedushka hasn't any money
+         to gas up the dedushka's motoblock.</p>
+    </div>
+    <div>
+      <span class="title">Contacts</span><br>
+      <span class="heading">How u can сontact us?</span>
+      <p>Write down, +7 1488 228 1337.
+      What? a lot numbers?</p>
+    </div>
+    <div>
+      <span class="title">Info</span><br>
+      <span class="heading">Some info about us</span>
+      <p>I'm Valeriy Zhmyshenko i'm bivis i'm dodik
+         i'm dcp i'm patau i'm 15 y.0 zdravstvuite</p>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  function slowScroll(id) {
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>

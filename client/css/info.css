@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  paddind: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5px;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #000;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Russo One', serif;
+}
+
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {color: #000; text-decoration: none;}
+
+#about > a:hover {
+  color: #fff;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+.fixed {
+  z-index: 5000;
+  background-color: #000;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #fff !important;
+}
+
+.fixed #about a {color: #fff}
+.fixed #about a:hover {color: #7c7c7c}
+
+
+#top {
+  width: 100%;
+  background-color: #fafafa;
+  text-align: center;
+  color: #000;
+  padding-bottom: 8%;
+}
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 2.3em;
+    height: 500px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 1.9em;
+    height: 300px;
+  }
+}
+
+@media (max-width: 650px) {
+  #top {
+    font-size: 1em;
+    padding-top: 50%;
+    height: 200px;
+  }
+}
+
+#top h2 {
+  padding-top: 15%;
+}
+
+#top h5 {
+  color: #636363;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+}
+
+#main {
+  padding: 100px 15%;
+  width: 70%;
+  background-color: #000;
+  border-top: 2px solid silver;
+  color: #f6f6f6;
+  font-size: 1.3em;
+}
+
+
+#main h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#main video {
+  width: 1000px;
+  height: 600px;
+}
+
+#main span {color: #a0a0a0 }
+
+
+
+#gadza4 {
+  padding: 100px 15%;
+  width: 70%;
+  background-color: #fff;
+  border-top: 2px solid silver;
+  color: #a0a0a0;
+  font-size: 1.3em;
+}
+
+
+#gadza4 h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#gadza4 video {
+  width: 1000px;
+  height: 600px;
+}
+
+#gadza4 span {color: #a0a0a0 }
+
+
+#gadza8 {
+  padding: 100px 15%;
+  width: 70%;
+  background-color: #000;
+  border-top: 2px solid silver;
+  color: #f6f6f6;
+  font-size: 1.3em;
+}
+
+
+#gadza8 h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#gadza8 video {
+  width: 1000px;
+  height: 600px;
+}
+
+#gadza8 span {color: #a0a0a0 }
+
+
+
+#gadzaU {
+  padding: 100px 15%;
+  width: 70%;
+  background-color: #fff;
+  border-top: 2px solid silver;
+  color: #a0a0a0;
+  font-size: 1.3em;
+}
+
+
+#gadzaU h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#gadzaU video {
+  width: 1000px;
+  height: 600px;
+}
+
+#gadzaU span {color: #a0a0a0 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#faq {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 40px;
+}

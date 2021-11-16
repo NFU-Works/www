@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  paddind: 0;
+  outline: none;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: Trebuchet MS, Helvetica;
+}
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5px;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  text-decoration: none;
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Russo One', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.1em;
+  }
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {color: #fff; text-decoration: none;}
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+
+.fixed #about a {color: #343434}
+.fixed #about a:hover {color: #7c7c7c}
+
+#top {
+  width: 100%;
+  background-image: url(/gadza1/kavoValakas.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+    height: 1000px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 2em;
+    height: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  #top {
+    font-size: 1em;
+    padding-top: 50%;
+    height: 500px;
+  }
+}
+
+#top h1 {
+  padding-top: 20%;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+#top h3 {
+  color: #ccc;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+
+#glad {
+  padding: 100px 15%;
+  width: 70%;
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+  #glad {
+    padding: 100px 15%;
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 140px) {
+  #glad {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #glad div {
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+
+#glad div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#glad div .img {
+  margin-right: 30%;
+}
+
+#glad div {box-sizing: border-box;}
+.img {
+  background: linear-gradient(#a0a0a0 50%, #767676 50%);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+
+#glad h2 {font-size: 3em}
+#glad span {color: #a0a0a0}
+
+
+#pena {
+  padding: 100px 15%;
+  width: 70%;
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+  #pena {
+    padding: 100px 15%;
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 140px) {
+  #pena {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #pena div {
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+
+#pena div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#pena div .img {
+  margin-right: 30%;
+}
+
+#pena div {box-sizing: border-box;}
+.img {
+  background: linear-gradient(#a0a0a0 50%, #767676 50%);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+
+#pena h2 {font-size: 3em}
+#pena span {color: #a0a0a0}
+
+
+
+#vdv {
+  padding: 100px 15%;
+  width: 70%;
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid silver;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+@media (min-width: 1401px) {
+  #vdv {
+    padding: 100px 15%;
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 140px) {
+  #vdv {
+    padding: 100px 10%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  #vdv div {
+    width: 98%!important;
+    margin-bottom: 20px;
+  }
+}
+
+
+#vdv div {
+  width: 48%;
+  margin-right: 2%;
+  float: left;
+}
+
+#vdv div .img {
+  margin-right: 30%;
+}
+
+#vdv div {box-sizing: border-box;}
+.img {
+  background: linear-gradient(#a0a0a0 50%, #767676 50%);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+
+#vdv h2 {font-size: 3em}
+#vdv span {color: #a0a0a0}
+
+
+#faq {
+  background-color: #fff;
+  border-top: 2px dashed #e4e3e3;
+  width: 100%;
+  float: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (min-width: 801px) {
+  #faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left;
+  }
+}
+
+@media (max-width: 800px) {
+  #faq div {
+    width: 80%;
+    margin-left: 10%;
+    float: left;
+  }
+}
+
+
+#faq .title {
+  font-weight: lighter;
+  color: #a3a0ad;
+  margin-bottom: 20px;
+  font-size: 2.2em;
+}
+
+
+#faq .heading {
+  color: #7d7d7d;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+#faq p {
+  font-family: Arimo, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #4a4a4a;
+  font-size: 0.95em;
+  margin-bottom: 40px;
+}

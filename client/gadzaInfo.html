@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>KORA RORA</title>
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="shortcut icon" href="/gadza1/valera.png" type="image/png">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>gadza</span>
+    </div>
+    <div id="about">
+      <a href="/" title="Main page" onclick="slowScroll('#main')">Home</a>
+      <a href="/gadzainfo" title="Info" onclick="slowScroll('#gadzaThreeDd')">Gadza Info</a>
+      <a href="/leaders" title="Lead" onclick="slowScroll('#Leader')">Leaders</a>
+      <a href="/about" title="Lead" onclick="slowScroll('#Leader')">About Us</a>
+      <a href="/signin" title="Lead" onclick="slowScroll('#Leader')">Sign in</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h2>Gadza List</h2>
+    <h5><span>Godzilla is an enormous, destructive, prehistoric sea monster awakened
+       and empowered by nuclear radiation. With the nuclear bombings of Hiroshima
+        and Nagasaki and the Lucky Dragon 5 incident still fresh in the Japanese
+         consciousness, Godzilla was conceived as a metaphor for nuclear weapons.</span></h5>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>Gadza 3D</h2>
+    </div>
+    <div class="img">
+      <video class="video" controls>
+        <source src="/videos/platina.webm" type="video/webm">
+        <source src="/videos/platina1.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="text">
+      <span>Valakas' real name is Denis Sukhachev. According to the user The Question,
+         earlier Denis had a real page on VKontakte, where he could find out his biography (now the account has been deleted).
+         According to these data, Sukhachev was born on September 13, 1989 in the city of Rovenki, Luhansk region of Ukraine.
+         Now he lives in Samara. There is a wife, Alina, who plays the role of the granddaughter of Valery Albertovich.
+      </span>
+    </div>
+  </div>
+
+
+  <div id="gadza4">
+    <div class="intro">
+      <h2>Gadza 4D</h2>
+    </div>
+    <div class="img">
+      <video class="video" controls>
+        <source src="/videos/abudabi.webm" type="video/webm">
+        <source src="/videos/abudavi1.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="text">
+      <span>Valakas started streaming in 2009. On the first streams,
+         he played Lineage II and commented in the voice of an elderly man with a Ukrainian accent.
+          Nick on twitch - GLADIATORPWNZ. It is watched by 150 thousand people on the YouTube channel.
+      </span>
+    </div>
+  </div>
+
+
+  <div id="gadza8">
+    <div class="intro">
+      <h2>Gadza 8D</h2>
+    </div>
+    <div class="img">
+      <video class="video" controls>
+        <source src="/videos/queno.webm" type="video/webm">
+        <source src="/videos/queno1.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="text">
+      <span>Valakas' wife also streams. Her name is Alina,
+         nickname on twitch a1most_over. Users found a connection between the characters - Denis appeared
+         on one of the girl's streams. In addition, there are many joint photos on the network, including weddings.
+         On Valakas' streams, Alina plays the role of granddaughter of her grandfather and constantly swears with him.
+      </span>
+    </div>
+  </div>
+
+
+  <div id="gadzaU">
+    <div class="intro">
+      <h2>Gadza Ultra</h2>
+    </div>
+    <div class="img">
+      <video class="video" controls>
+        <source src="/videos/sanlaran.webm" type="video/webm">
+        <source src="/videos/sanlaran1.ogv" type="video/ogg">
+      </video>
+    </div>
+    <div class="text">
+      <span>Glad Valakas is known not only for his image, but also for the many branded phrases and words
+            that were taken apart into quotes: Chi, sho, kavo, la, tupa atdihaem, tupa pazheloi borrov (or krol),
+            agricultural (sanya khuy sasi) etc. In addition, many memes are dedicated to the work of Valakas.
+            In "VKontakte" there are several publics collecting such jokes.
+            The “face” of Valakas is also a well-known image on the Internet.
+            All of Denis's avatars have the famous photograph of "Drizzy and Casie" by Roger Ballen.
+      </span>
+    </div>
+  </div>
+
+
+  <div id="faq">
+    <div>
+      <span class="title">Payment</span><br>
+      <span class="heading">How u can make a transaction?</span>
+      <p>Please, donate some gryvnas to dedushka
+         to buy chekushku. Dedushka hasn't any money
+         to gas up the dedushka's motoblock.</p>
+    </div>
+    <div>
+      <span class="title">Contacts</span><br>
+      <span class="heading">How u can сontact us?</span>
+      <p>Write down, +7 1488 228 1337.
+      What? a lot numbers?</p>
+    </div>
+    <div>
+      <span class="title">Info</span><br>
+      <span class="heading">Some info about us</span>
+      <p>I'm Valeriy Zhmyshenko i'm bivis i'm dodik
+         i'm dcp i'm patau i'm 15 y.0 zdravstvuite</p>
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  function slowScroll(id) {
+    $('html, body').animate({
+      scrollTop: $(id).offset().top
+    }, 500);
+  }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
